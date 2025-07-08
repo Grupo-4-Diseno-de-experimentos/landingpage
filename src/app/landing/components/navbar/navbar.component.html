@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="flex-shrink-0">
         <a href="/" class="text-xl font-bold text-[var(--green-dark)]">
-          <img src="/logo.png" alt="logo-image" class="w-40">
+          <img src="logo.png" alt="logo-image" class="w-40">
         </a>
       </div>
 
@@ -21,24 +21,25 @@
         <a href="#" class="bg-[var(--green-dark)] text-white px-4 py-2 rounded hover:bg-[var(--yellow)]">Log In</a>
       </div>
 
-      <!-- Mobile menu button -->
-      <!--<div class=" flex items-center">
-        <button class="text-gray-700 focus:outline-none"> &lt;!&ndash;(click)="toggleMenu()"&ndash;&gt;
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+       <!--Mobile menu button-->
+      <div class=" flex items-center w-10 h-10 md:hidden">
+        <button class="text-gray-700 focus:outline-none" (click)="toggleMenu()">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2"
                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-            &lt;!&ndash;<path [attr.d]="menuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'" />&ndash;&gt;
+            <path [attr.d]="menuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'" />
           </svg>
         </button>
-      </div>-->
+      </div>
     </div>
   </div>
 
   <!-- Mobile menu -->
-  <!--<div *ngIf="menuOpen" class="md:hidden bg-white border-t">
+  <div *ngIf="menuOpen" class="md:hidden bg-white border-t">
     <a href="#features" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Features</a>
     <a href="#benefits" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Benefits</a>
+    <a href="#steps" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">How It Works</a>
     <a href="#pricing" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a>
-    <a href="#faqs" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">FAQs</a>
-    <a href="#signup" class="block px-4 py-2 text-[#245e4f] font-semibold hover:bg-gray-100">Get Started</a>
-  </div>-->
+    <a href="#faq" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">FAQs</a>
+    <a href="https://nutrismart-da407.web.app/login" class="block px-4 py-2 text-[#245e4f] font-bold hover:bg-gray-100">Log In</a>
+  </div>
 </nav>
