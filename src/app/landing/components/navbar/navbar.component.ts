@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgIf} from '@angular/common';
+import {window} from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -14,4 +15,6 @@ export class NavbarComponent {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
+
+  protected readonly window = window;
 }
